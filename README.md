@@ -1,11 +1,11 @@
-Package go-unzip
+Package unziper-go
 ===================
 
-Package go-unzip provides a very simple library to extract zip archive
+Package unziper-go provides a very simple library to extract zip archive
 
 ## Installation
 ```shell
-go get -u github.com/artdarek/go-unzip
+go get -u github.com/jcarriere/unziper-go
 ```
 
 ## Examples
@@ -14,12 +14,12 @@ go get -u github.com/artdarek/go-unzip
 package main
 
 import (
-    "github.com/artdarek/go-unzip"
+    "github.com/jcarriere/unziper-gop"
 	"fmt"
 )
 
 func main() {
-	uz := unzip.New("file.zip", "directory/")
+	uz := unziper.New("file.zip", "directory/")
 	err := uz.Extract()
 	if err != nil {
 		fmt.Println(err)
